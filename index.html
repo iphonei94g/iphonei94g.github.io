@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Alexandrovich - Software Engineer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #0f172a, #1e293b);
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .parallax {
+      background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+
+<body class="">
+  <header class="h-screen parallax flex items-center justify-center text-center">
+    <div class="bg-black bg-opacity-60 p-10 rounded-xl">
+      <h1 class="text-5xl font-bold mb-4">Alex Alexandrovich</h1>
+      <p class="text-xl mb-6">Software Engineer | Educator | Developer</p>
+      <a href="#contact" class="px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white rounded-lg text-lg">Contact Me</a>
+    </div>
+  </header>
+
+  <section class="py-20 px-6 text-center bg-gray-900">
+    <h2 class="text-4xl font-bold mb-6">Who Am I?</h2>
+    <p class="max-w-2xl mx-auto text-gray-300 text-lg">
+      I'm a 30-year-old software engineer with a passion for building modern, scalable web applications and teaching others to do the same. Whether you're looking for expert development or want to level up your coding skills, you're in the right place.
+    </p>
+  </section>
+
+  <section class="py-20 bg-gradient-to-br from-indigo-600 to-blue-500 text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-8">My Courses</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white bg-opacity-10 rounded-xl p-6 shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Frontend Mastery</h3>
+          <p class="text-sm">Learn modern frontend frameworks like React, Tailwind, and more.</p>
+        </div>
+        <div class="bg-white bg-opacity-10 rounded-xl p-6 shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Backend Wizardry</h3>
+          <p class="text-sm">Master Node.js, databases, APIs, and scalable backend systems.</p>
+        </div>
+        <div class="bg-white bg-opacity-10 rounded-xl p-6 shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Full Stack Hero</h3>
+          <p class="text-sm">Combine frontend and backend skills to build full-fledged applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 px-6 bg-gray-800 text-center">
+    <h2 class="text-4xl font-bold text-white mb-8">Support My Work</h2>
+    <div class="space-x-4">
+      <button onclick="pay(5)" class="px-6 py-3 bg-green-500 hover:bg-green-700 text-white rounded-lg">Pay $5</button>
+      <button onclick="pay(10)" class="px-6 py-3 bg-yellow-500 hover:bg-yellow-700 text-white rounded-lg">Pay $10</button>
+      <button onclick="pay(100)" class="px-6 py-3 bg-red-500 hover:bg-red-700 text-white rounded-lg">Pay $100</button>
+    </div>
+    <script>
+      function pay(amount) {
+        alert(`Redirecting to payment for $${amount}`);
+        // Replace below with your payment provider integration
+        window.open(`mailto:alex@example.com?subject=Support Payment&body=I want to support you with $${amount}`);
+      }
+    </script>
+  </section>
+
+  <section id="contact" class="py-20 bg-gray-900 text-center text-white">
+    <h2 class="text-4xl font-bold mb-4">Get in Touch</h2>
+    <p class="mb-6">Email me directly for freelance work, collaborations, or course inquiries.</p>
+    <a href="mailto:alex@example.com" class="px-6 py-3 bg-blue-600 hover:bg-blue-800 rounded-lg text-lg">Email Me</a>
+  </section>
+
+  <footer class="py-6 bg-gray-950 text-center text-gray-500 text-sm">
+    &copy; 2025 Alex Alexandrovich. All rights reserved.
+  </footer>
+</body>
+
+</html>
